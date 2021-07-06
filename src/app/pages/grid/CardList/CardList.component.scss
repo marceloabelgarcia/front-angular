@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+}
+
+@media (max-width: 620px) {
+  .card {
+    width: 100%;
+  }
+}

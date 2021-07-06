@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+@media (max-width: 620px) {
+  .list {
+    transition: all 0.3s ease-in;
+    margin-left: 0;
+  }
+}

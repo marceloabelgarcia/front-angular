@@ -1,0 +1,16 @@
+<div class="card" *ngFor="let item of swapilist">
+  <ui-card>
+    <ui-card-title>{{ item.name }}</ui-card-title>
+    <ui-card-subtitle
+      >Created: {{ item.created | date: "mediumDate" }}</ui-card-subtitle
+    >
+    <ui-card-content
+      ><a [href]="item.url" target="_black">{{ item.url }}</a></ui-card-content
+    >
+
+    <ui-card-actions>
+      <ui-button color="primary">Action 1</ui-button>
+      <ui-button color="accent">Action 2</ui-button>
+    </ui-card-actions>
+  </ui-card>
+</div>

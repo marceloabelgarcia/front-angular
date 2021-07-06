@@ -1,0 +1,36 @@
+<div class="main">
+  <a [routerLink]="['/grid']">Grid, responsive & services</a>
+
+  <p>Ripple example</p>
+
+  <ui-button>Default</ui-button>
+  <ui-button color="primary">Accent</ui-button>
+  <ui-button color="accent">Accent</ui-button>
+  <ui-button disabled>Disabled</ui-button>
+
+  <br />
+  <br />
+  <br />
+
+  <div
+    style="
+      max-width: 300px;
+      height: 120px;
+      border: 1px solid #ddd;
+      padding: 5px;
+    "
+    ui-ripple
+  >
+    Elemento que tiene el efecto ripple
+  </div>
+
+  <br />
+  <br />
+
+  <div style="max-width: 300px" ui-ripple>
+    <img
+      width="100%"
+      src="https://cdn.pixabay.com/photo/2019/12/11/21/18/landscape-4689328_960_720.jpg"
+    />
+  </div>
+</div>

@@ -1,0 +1,86 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  top: 0;
+  position: fixed;
+  background-color: #111111;
+  height: 100vh;
+  padding: 10px;
+  z-index: 10000;
+  transition: transform 0.5s ease-in-out;
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #ddd;
+}
+
+.list {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.menu {
+  width: 100vw;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.menu button {
+  display: none;
+}
+.menu .title {
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 200px;
+}
+@media (max-width: 620px) {
+  .main {
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+  }
+
+  .main.active {
+    transform: translateX(0);
+  }
+
+  .menu .title {
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  .menu button {
+    display: block;
+  }
+
+  .close-btn {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+  }
+}

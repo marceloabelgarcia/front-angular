@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+body,
+html {
+  margin: 0;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+button {
+  background: none;
+  border: none;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+
+.ripple {
+  border-radius: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  pointer-events: none;
+  opacity: 1;
+
+  visibility: hidden;
+}
+
+.ripple.active {
+  transition: width 0.8s, height 0.8s, opacity 0.8s ease-in;
+  background-color: #ddddddaa;
+  visibility: visible;
+  opacity: 0;
+}
+
+.shadow {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}

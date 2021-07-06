@@ -1,0 +1,17 @@
+<div class="menu">
+  <button (click)="handleMenu()" class="menu-btn">
+    <span class="material-icons">menu</span>
+  </button>
+  <div class="title">{{ title }}</div>
+</div>
+
+<div class="main" [ngClass]="{ active: menuOpen }">
+  <button (click)="handleClose()" class="close-btn">
+    <span class="material-icons">close</span>
+  </button>
+  <ul>
+    <li (click)="handleClose()" *ngFor="let item of categories">
+      <a [routerLink]="['/grid', item]">{{ item }}</a>
+    </li>
+  </ul>
+</div>
